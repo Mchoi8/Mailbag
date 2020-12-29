@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #FFFAFA;
+}
+
+
+/* Container that the entire UI is in. */
+.appContainer {
+  display : grid;
+  grid-template-columns : 140px 180px 1fr;
+  grid-template-rows : 50px 1fr;
+  width : 100vw;
+  height : 100vh;
+}
+
+/* The toolbar up top. */
+.toolbar {
+  background-color: #F5F5F5;
+  grid-column : 1 / 4;
+  grid-row : 1 / 1;
+  border-bottom : 1px solid #e0e0e0;
+  padding-top : 8px;
+  padding-left : 4px;
+}
+
+/* List of mailboxes on the left. */
+.mailboxList {
+  background-color: #F0FFF0;
+  grid-column : 1 / 1;
+  grid-row : 2 / 2;
+  border-right : 1px solid #e0e0e0;
+  padding-top : 6px;
+  padding-left : 4px;
+  overflow : auto;
+}
+
+/* The center area (includes message list and message/contact views). */
+.centerArea {  
+  padding: 5px;
+  display : grid;
+  grid-template-rows : 200px 1fr;
+}
+
+/* The message list at the top of the center area. */
+.messageList {
+  border-bottom : 2px solid #e0e0e0;
+  grid-row : 1 / 1;
+  overflow : auto;
+}
+
+/* The container for the message and contact views below the message list. */
+.centerViews {
+  grid-row : 3 / 4;
+  padding-top : 4px;
+  padding-left : 4px;
+  padding-right : 4px;
+  overflow : auto;
+}
+
+/* The contact list on the right. */
+.contactList {
+  grid-column : 2 / 2;
+  grid-row : 2 / 2;
+  border-right : 1px solid #e0e0e0;
+  padding-top : 4px;
+  padding-left : 4px;
+  overflow : auto;
+  background-color: aliceblue;
+}
+
+/* Style to override default gray disabled color of the message ID and date fields in the message view. */
+.messageInfoField {
+  color : #000000!important;
+}

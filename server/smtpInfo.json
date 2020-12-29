@@ -1,0 +1,9 @@
+{
+    "smtp" : {
+    "service": "gmail",
+    "auth" : {
+      "user" : "matthewyjchoi@gmail.com",
+      "pass" : "Onepiece11224"
+    }
+  }
+}

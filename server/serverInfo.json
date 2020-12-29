@@ -1,0 +1,10 @@
+{
+  "imap" : {
+    "host" : "imap.gmail.com",
+    "port" : 993, 
+    "auth" : {
+      "user" : "matthewyjchoi@gmail.com",
+      "pass" : "Onepiece11224"
+    }
+  }
+}
